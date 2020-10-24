@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="375dp"
+    android:background="@drawable/gradient"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    >
+<TextView
+    android:id="@+id/close"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:textColor="@android:color/black"
+    android:text="X"
+    android:textStyle="bold"
+    android:layout_gravity="end"
+    android:gravity="center"
+    android:background="@drawable/circlebackground"
+
+    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="337dp">
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:background="@color/colorAdmin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.012" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="189dp"
+            android:layout_height="22dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Forgot Your Password ?"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view10"
+            app:layout_constraintEnd_toEndOf="@+id/view10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="88dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/forgot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.183" />
+
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="286dp"
+            android:layout_height="45dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/forget"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="278dp"
+            android:layout_height="49dp"
+            android:background="@drawable/round_bordered"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Enter Your E-mail Here..."
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forget"
+            app:layout_constraintVertical_bias="0.093" />
+
+        <Button
+            android:id="@+id/forgetcancel"
+            android:layout_width="112dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#ff5050"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.178"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view10"
+            app:layout_constraintVertical_bias="0.908" />
+
+        <Button
+            android:id="@+id/forgetsubmit"
+            android:layout_width="112dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#48B9Ac"
+            android:text="SUBMIT"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toEndOf="@+id/forgetcancel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.906" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
+

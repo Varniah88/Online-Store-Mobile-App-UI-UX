@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topHeader"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/back_left_icon"
+            android:layout_width="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorList"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="22sp"
+            android:text="Order Confirmation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <LinearLayout
+            android:layout_width="403dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="68dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-4dp">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/user_icon_location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="158dp"
+                android:layout_height="90dp"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="193dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Nirogini" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="29/2,1st lane,Oldpak road,Jaffna." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Nothern,LK,40000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="+94778068873" />
+
+            </LinearLayout>
+
+            <android.widget.Button
+                android:id="@+id/button_change_address"
+                style="@style/CardView"
+                android:layout_width="82dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:text="Change"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="677dp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="476dp"
+                android:layout_height="161dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_myReview">
+
+                <LinearLayout
+                    android:id="@+id/main_payment_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView1"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/colorProfile">
+
+                        <LinearLayout
+                            android:layout_width="212dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="49dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/elec3" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/amount1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:text="LKR 8500.00" />
+
+                                <TextView
+                                    android:id="@+id/shipping1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:text="Shipping -> 1200LKR"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/delete1"
+                            android:layout_width="22dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="220dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/delete" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/colorProfile">
+
+                        <LinearLayout
+                            android:layout_width="212dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="49dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/bag1" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="200LKR" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Shipping -> 25.08LKR"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/delete2"
+                            android:layout_width="22dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="220dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/delete" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/colorProfile">
+
+                        <LinearLayout
+                            android:layout_width="212dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="49dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/lap3" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="17500LKR" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Shipping -> 500.98LKR"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/delete3"
+                            android:layout_width="22dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="220dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/delete" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </ScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="388dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="21dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cart_details2"
+                    android:layout_width="406dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cart_details1">
+
+                    <LinearLayout
+                        android:layout_width="396dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="391dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/total_shipping_txt"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="55dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Total shipping : 1,726.06LKR"
+                                android:textColor="@color/brown"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/total_amount_txt"
+                                android:layout_width="261dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="55dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Total amount to pay : 26,200.00LKR"
+                                android:textColor="@color/brown"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="386dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="21dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cart_details3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cart_details1">
+
+                    <LinearLayout
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="62dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/payment"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="90dp">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/radioButtonPaypal"
+                                android:layout_width="264dp"
+                                android:layout_height="31dp"
+                                android:text="Pay pal" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonCard"
+                                android:layout_width="264dp"
+                                android:layout_height="31dp"
+                                android:text="Stripe" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtoncod"
+                                android:layout_width="264dp"
+                                android:layout_height="31dp"
+                                android:text="Cash On Delivery" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <android.widget.Button
+                android:id="@+id/place_order_btn"
+                style="@style/CardView"
+                android:layout_width="206dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="147dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="152dp"
+                android:background="@color/colorAccent"
+                android:text="Place Order"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

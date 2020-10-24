@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/CardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear_top111"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a question"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/close_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circlebackground"
+            android:backgroundTint="@android:color/white"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="X"
+            android:layout_marginStart="28dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="@+id/linear_top111"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <EditText
+            android:padding="10dp"
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:hint="Enter Your Message"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="70dp"
+            android:textSize="19sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:layout_marginTop="120dp"
+            android:id="@+id/send_message"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Send Message"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

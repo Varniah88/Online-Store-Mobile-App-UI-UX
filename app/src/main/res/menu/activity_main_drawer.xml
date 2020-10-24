@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/user_home_black"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_prof"
+        android:icon="@drawable/user_profile_black"
+        android:title="My Profile" />
+
+    <item
+        android:id="@+id/wishlist"
+        android:icon="@drawable/user_list_black"
+        android:title="My Wishlist" />
+    <item
+        android:id="@+id/cartActivity"
+        android:icon="@drawable/user_cart_black"
+        android:title="My cart" />
+    <item
+        android:id="@+id/nav_orders"
+        android:icon="@drawable/user_order_black"
+        android:title="My Orders" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/user_history_black"
+            android:title="Review History" />
+
+
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/wish_heart_black"
+            android:title="Promotions"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/user_logout_exit"
+            android:title="Log Out"/>
+
+    <item android:title="Suggest">
+        <menu>
+            <item
+                android:id="@+id/fragmentFaq"
+                android:icon="@drawable/user_faq_black"
+                android:title="@string/faq" />
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/user_call_black"
+                android:title="Email" />
+            <item
+                android:id="@+id/email"
+                android:icon="@drawable/user_email_black"
+                android:title="Call" />
+        </menu>
+    </item>
+
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/shareFragment"
+                android:icon="@drawable/user_shares_black"
+                android:title="Share" />
+            <item
+                android:id="@+id/sendFragment"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="About Us" />
+        </menu>
+    </item>
+</menu>

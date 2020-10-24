@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.android_second.ueeproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/nav_prof"
+        android:name="com.android_second.ueeproject.UserprofileActivity"
+        android:label="User Profile"
+        tools:layout="@layout/activity_userprofile2"/>
+    <activity
+        android:id="@+id/nav_orders"
+        android:name="com.android_second.ueeproject.ViewOrders"
+        android:label="My Orders"
+        tools:layout="@layout/activity_view_orders"/>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.android_second.ueeproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.android_second.ueeproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <activity
+        android:id="@+id/nav_promo"
+        android:name="com.android_second.ueeproject.PromotionsActivity"
+        android:label="Promotions"
+        tools:layout="@layout/activity_promotions"/>
+
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.android_second.ueeproject.StartActivity"
+        tools:layout="@layout/activity_start2"/>
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="com.android_second.ueeproject.ui.send.SendFragment"
+        android:label="send_fragment"
+        tools:layout="@layout/send_fragment" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="com.android_second.ueeproject.ui.share.ShareFragment"
+        android:label="share_fragment"
+        tools:layout="@layout/share_fragment" />
+    <fragment
+        android:id="@+id/fragmentFaq"
+        android:name="com.android_second.ueeproject.faq"
+        android:label="faq"
+        tools:layout="@layout/fragment_faq"/>
+    <activity
+        android:id="@+id/cartActivity"
+        android:name="com.android_second.ueeproject.CartActivity"
+        android:label="activity_cart"
+        tools:layout="@layout/activity_cart" />
+    <fragment
+        android:id="@+id/email"
+        android:name="com.android_second.ueeproject.ui.email.email"
+        android:label="email_fragment"
+        tools:layout="@layout/email_fragment" />
+    <fragment
+        android:id="@+id/call"
+        android:name="com.android_second.ueeproject.ui.call.call"
+        android:label="call_fragment"
+        tools:layout="@layout/call_fragment" />
+    <fragment
+        android:id="@+id/wishlist"
+        android:name="com.android_second.ueeproject.ui.wishlist.wishlist"
+        android:label="wishlist_fragment"
+        tools:layout="@layout/wishlist_fragment" />
+
+</navigation>
